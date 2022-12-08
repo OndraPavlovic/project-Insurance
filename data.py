@@ -11,10 +11,10 @@ class Databaze:
 
         novy_pojistenec = Pojistenec()
 
-        novy_pojistenec.jmeno = input("Zadejte jméno pojištěného: ")
-        novy_pojistenec.prijmeni = input("Zadejte příjmení pojištěného: ")
-        novy_pojistenec.tel_cislo = input("Zadejte telefonní číslo: ")
-        novy_pojistenec.vek = input("Zadejte věk: ")
+        novy_pojistenec.jmeno = input("Zadejte jméno pojištěného:\n")
+        novy_pojistenec.prijmeni = input("Zadejte příjmení pojištěného:\n")
+        novy_pojistenec.tel_cislo = input("Zadejte telefonní číslo:\n")
+        novy_pojistenec.vek = input("Zadejte věk:\n")
 
         self.pojistenci.append(novy_pojistenec)
 
@@ -26,11 +26,11 @@ class Databaze:
     def vyhledat_pojistence(self):
         spatne = True
         while spatne:
-            jmeno = input("Zadejte jméno pojištěného: ")
-            prijmeni = input("Zadejte příjmení pojištěného: ")
+            jmeno = input("Zadejte jméno pojištěného:\n")
+            prijmeni = input("Zadejte příjmení pojištěného:\n")
             vyhledana_osoba = [osoba for osoba in self.pojistenci if (osoba.jmeno == jmeno)
                                and (osoba.prijmeni == prijmeni)]
-            if :
+            if vyhledana_osoba:
                 for prvek in vyhledana_osoba:
                     print(prvek)
                 return True
@@ -69,7 +69,7 @@ class Databaze:
         print("3 - Vyhledat pojištěného")
         print("4 - Konec")
 
-        volba = self.nacti_cislo("Vaše volba: ", "Chybná volba!")
+        volba = self.nacti_cislo("Vaše volba:\n", "Chybná volba!")
 
         if volba == 1:
             self.zalozit_pojistence()
