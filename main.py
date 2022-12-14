@@ -1,4 +1,4 @@
-from data import Databaze
+from database import Databaze
 
 aplikace = Databaze()
 aplikace.main()

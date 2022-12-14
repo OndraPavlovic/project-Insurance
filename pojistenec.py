@@ -1,4 +1,7 @@
 class Pojistenec:
+    """
+    třída reprezentující konkrétního pojištěnce, zadáváme jméno, příjmení, tel. číslo a věk
+    """
 
     def __int__(self, jmeno, prijmeni, tel_cislo, vek):
         self.jmeno = jmeno
