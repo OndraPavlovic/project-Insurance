@@ -1,1 +1,1 @@
-# project-Insurance
+# Name of the project: Insurance
